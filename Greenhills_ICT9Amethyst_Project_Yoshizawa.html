@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <title>Unit Converter</title>
+</head>
+<body>
+ </nav><br><br><br><br><br>
+    <style> 
+        body {
+            background:#FFCCCB;
+            text-transform:Capitalize;
+
+        }
+        table {
+            align:center;
+        }
+        h1 {
+            background:#FFFFFF;
+            border-style: inset;
+            border-width: 6px;
+            width: 800px;
+            height:720px;
+            border-top-color: #33FFDA;
+            border-bottom-color: #33FFDA;
+            border-left-color: #33FFDA;
+            border-right-color: #33FFDA;
+            margin:auto;
+            padding: 5px;
+        }
+    </style> 
+</head>
+<body>
+    <tr>   
+           <center>
+    </tr>
+<h1><br>  
+    <th>Unit Converter</th><br><br>
+    <select class="form-control">
+            <option class="bg-primary">Length</option>
+        </select><br>
+    <th>Type Desired Value:</th><br>    
+    <input type="text" id="id1" placeholder="Milimiters"><br>
+    <td>=</td><br>
+    <td>The Converted Value is:</td><br>
+    <p id="answer"><input type="text"></p><br>
+    <input type="submit" value="Convert to Centimiters" onclick="myFunction()">
+    <input type="submit" value="Convert to Meters" onclick="myFunction2()"><br>
+    <input type="submit" value="Convert to Kilometers" onclick="myFunction3()"><br><br>
+    <script> 
+        function myFunction() {
+            var num1 = document.getElementById('id1').value;
+            var num2= 10;  
+            var answer = Number(num1) / Number(num2);
+            document.getElementById('answer').innerHTML = answer;
+        }  
+         function myFunction2() {
+            var num1 = document.getElementById('id1').value;
+            var num2= 1000;  
+            var answer = Number(num1) / Number(num2);
+            document.getElementById('answer').innerHTML = answer;
+        }  
+         function myFunction3() {
+            var num1 = document.getElementById('id1').value;
+            var num2= 1e+6;  
+            var answer = Number(num1) / Number(num2);
+            document.getElementById('answer').innerHTML = answer;
+        }  
+    </script>
+</h1>  
+</body>
